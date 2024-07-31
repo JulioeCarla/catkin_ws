@@ -1,0 +1,398 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="cerberus_anymal_c_sensor_config_1">
+    <static>false</static>
+    <link name="base">
+      <pose frame="">0 0 0.2 0 0 0</pose>
+      <inertial>
+        <mass>32.0</mass>
+        <inertia>
+          <ixx>1.0</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>1.0</iyy>
+          <iyz>0.0</iyz>
+          <izz>1.0</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_visual">
+        <geometry>
+          <mesh>
+            <uri>model://CERBERUS_ANYMAL_C_SENSOR_CONFIG_1/meshes/cerberus_body.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_collision">
+        <geometry>
+          <mesh>
+            <uri>model://CERBERUS_ANYMAL_C_SENSOR_CONFIG_1/meshes/cerberus_body.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <sensor name="imu_sensor" type="imu">
+      <always_on>1</always_on>
+      <update_rate>400</update_rate>
+      <imu>
+        <angular_velocity>
+          <x>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.009</stddev>
+              <bias_mean>0.00075</bias_mean>
+              <bias_stddev>0.005</bias_stddev>
+              <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+              <precision>0.00025</precision>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.009</stddev>
+              <bias_mean>0.00075</bias_mean>
+              <bias_stddev>0.005</bias_stddev>
+              <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+              <precision>0.00025</precision>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.009</stddev>
+              <bias_mean>0.00075</bias_mean>
+              <bias_stddev>0.005</bias_stddev>
+              <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+              <precision>0.00025</precision>
+            </noise>
+          </z>
+        </angular_velocity>
+        <linear_acceleration>
+          <x>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.021</stddev>
+              <bias_mean>0.05</bias_mean>
+              <bias_stddev>0.0075</bias_stddev>
+              <dynamic_bias_stddev>0.000375</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>175.0</dynamic_bias_correlation_time>
+              <precision>0.005</precision>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.021</stddev>
+              <bias_mean>0.05</bias_mean>
+              <bias_stddev>0.0075</bias_stddev>
+              <dynamic_bias_stddev>0.000375</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>175.0</dynamic_bias_correlation_time>
+              <precision>0.005</precision>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.021</stddev>
+              <bias_mean>0.05</bias_mean>
+              <bias_stddev>0.0075</bias_stddev>
+              <dynamic_bias_stddev>0.000375</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>175.0</dynamic_bias_correlation_time>
+              <precision>0.005</precision>
+            </noise>
+          </z>
+        </linear_acceleration>
+      </imu>
+      <pose frame="base">0.249 0.008 0.046 0.000 -0.000 1.571</pose>
+    </sensor>
+    <sensor name="perception_head_imu_sensor" type="imu">
+      <always_on>1</always_on>
+      <update_rate>200</update_rate>
+      <imu>
+        <angular_velocity>
+          <x>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.009</stddev>
+              <bias_mean>0.00075</bias_mean>
+              <bias_stddev>0.005</bias_stddev>
+              <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+              <precision>0.00025</precision>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.009</stddev>
+              <bias_mean>0.00075</bias_mean>
+              <bias_stddev>0.005</bias_stddev>
+              <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+              <precision>0.00025</precision>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.009</stddev>
+              <bias_mean>0.00075</bias_mean>
+              <bias_stddev>0.005</bias_stddev>
+              <dynamic_bias_stddev>0.00002</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>400.0</dynamic_bias_correlation_time>
+              <precision>0.00025</precision>
+            </noise>
+          </z>
+        </angular_velocity>
+        <linear_acceleration>
+          <x>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.021</stddev>
+              <bias_mean>0.05</bias_mean>
+              <bias_stddev>0.0075</bias_stddev>
+              <dynamic_bias_stddev>0.000375</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>175.0</dynamic_bias_correlation_time>
+              <precision>0.005</precision>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.021</stddev>
+              <bias_mean>0.05</bias_mean>
+              <bias_stddev>0.0075</bias_stddev>
+              <dynamic_bias_stddev>0.000375</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>175.0</dynamic_bias_correlation_time>
+              <precision>0.005</precision>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0</mean>
+              <stddev>0.021</stddev>
+              <bias_mean>0.05</bias_mean>
+              <bias_stddev>0.0075</bias_stddev>
+              <dynamic_bias_stddev>0.000375</dynamic_bias_stddev>
+              <dynamic_bias_correlation_time>175.0</dynamic_bias_correlation_time>
+              <precision>0.005</precision>
+            </noise>
+          </z>
+        </linear_acceleration>
+      </imu>
+      <pose frame="base">-0.327 -0.005 0.206 0.000 0.000 -1.571</pose>
+    </sensor>
+    <sensor name="camera_0" type="camera">
+      <always_on>1</always_on>
+      <update_rate>20</update_rate>
+      <pose frame="base">-0.400 -0.050 0.229 -0.006 0.011 3.133</pose>
+      <camera name="camera_0">
+        <horizontal_fov>2.19911</horizontal_fov>
+        <lens>
+          <intrinsics>
+            <fx>183.43</fx>
+            <fy>183.43</fy>
+            <cx>360.5</cx>
+            <cy>270.5</cy>
+            <s>0</s>
+          </intrinsics>
+        </lens>
+        <image>
+          <width>720</width>
+          <height>540</height>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>100</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    </sensor>
+    <sensor name="camera_1" type="camera">
+      <always_on>1</always_on>
+      <update_rate>20</update_rate>
+      <pose frame="base">-0.400 0.049 0.229 -0.006 0.0 3.139</pose>
+      <camera name="camera_1">
+        <horizontal_fov>2.19911</horizontal_fov>
+        <lens>
+          <intrinsics>
+            <fx>183.43</fx>
+            <fy>183.43</fy>
+            <cx>360.5</cx>
+            <cy>270.5</cy>
+            <s>0</s>
+          </intrinsics>
+        </lens>
+        <image>
+          <width>728</width>
+          <height>544</height>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>100</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    </sensor>
+    <sensor name="camera_2" type="camera">
+      <always_on>1</always_on>
+      <update_rate>20</update_rate>
+      <pose frame="base">-0.379 -0.050 0.265 -0.009 -1.572 -0.004</pose>
+      <camera name="camera_2">
+        <horizontal_fov>2.19911</horizontal_fov>
+        <lens>
+          <intrinsics>
+            <fx>183.43</fx>
+            <fy>183.43</fy>
+            <cx>360.5</cx>
+            <cy>270.5</cy>
+            <s>0</s>
+          </intrinsics>
+        </lens>
+        <image>
+          <width>720</width>
+          <height>540</height>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>100</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    </sensor>
+    <sensor name="camera_3" type="camera">
+      <always_on>1</always_on>
+      <update_rate>20</update_rate>
+      <pose frame="base">-0.348 -0.073 0.237 0.004 -0.172 -1.575</pose>
+      <camera name="camera_3">
+        <horizontal_fov>2.19911</horizontal_fov>
+        <lens>
+          <intrinsics>
+            <fx>183.43</fx>
+            <fy>183.43</fy>
+            <cx>360.5</cx>
+            <cy>270.5</cy>
+            <s>0</s>
+          </intrinsics>
+        </lens>
+        <image>
+          <width>720</width>
+          <height>540</height>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>100</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    </sensor>
+    <sensor name="camera_4" type="camera">
+      <always_on>1</always_on>
+      <update_rate>20</update_rate>
+      <pose frame="base">-0.399 -0.000 0.228 -0.009 -0.002 3.136</pose>
+      <camera name="camera_4">
+        <horizontal_fov>2.19911</horizontal_fov>
+        <lens>
+          <intrinsics>
+            <fx>183.43</fx>
+            <fy>183.43</fy>
+            <cx>360.5</cx>
+            <cy>270.5</cy>
+            <s>0</s>
+          </intrinsics>
+        </lens>
+        <image>
+          <width>720</width>
+          <height>540</height>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>100</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    </sensor>
+    <sensor name="camera_5" type="camera">
+      <always_on>1</always_on>
+      <update_rate>20</update_rate>
+      <pose frame="base">-0.347 0.072 0.236 -0.012 -0.171 1.569</pose>
+      <camera name="camera_5">
+        <horizontal_fov>2.19911</horizontal_fov>
+        <lens>
+          <intrinsics>
+            <fx>183.43</fx>
+            <fy>183.43</fy>
+            <cx>360.5</cx>
+            <cy>270.5</cy>
+            <s>0</s>
+          </intrinsics>
+        </lens>
+        <image>
+          <width>720</width>
+          <height>540</height>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>100</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    </sensor>
+    <sensor name="camera_6" type="camera">
+      <always_on>1</always_on>
+      <update_rate>20</update_rate>
+      <pose frame="base">-0.379 0.050 0.265 -0.009 -1.572 -0.004</pose>
+      <camera name="camera_6">
+        <horizontal_fov>2.19911</horizontal_fov>
+        <lens>
+          <intrinsics>
+            <fx>183.43</fx>
+            <fy>183.43</fy>
+            <cx>360.5</cx>
+            <cy>270.5</cy>
+            <s>0</s>
+          </intrinsics>
+        </lens>
+        <image>
+          <width>720</width>
+          <height>540</height>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>100</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    </sensor>
+  </model>
+</sdf>

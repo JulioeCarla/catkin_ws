@@ -1,0 +1,7 @@
+<launch>
+  <arg name="model" default="$(find my_robot_pkg)/models/neo/neo_model/neo_model.sdf" />
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_robot_pkg)/rviz/neo.rviz" />
+</launch>
